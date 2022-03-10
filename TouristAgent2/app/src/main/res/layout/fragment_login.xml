@@ -11,6 +11,7 @@
         android:layout_height="wrap_content"
         android:text="@string/app_name"
         android:textSize="50sp"
+        android:fontFamily="@font/indigo_daisy"
         android:layout_marginStart="25dp"
         android:layout_marginBottom="10dp"
         android:layout_above="@id/tv_subtitle"
@@ -20,24 +21,24 @@
         android:id="@+id/tv_subtitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@id/et_name"
-        android:layout_marginStart="25dp"
-        android:layout_marginLeft="25dp"
-        android:layout_marginBottom="50dp"
         android:text="@string/tag"
-        android:textSize="17sp" />
+        android:textSize="17sp"
+        android:layout_marginStart="25dp"
+        android:layout_marginBottom="50dp"
+        android:layout_above="@id/et_email"
+        android:layout_marginLeft="25dp" />
 
     <EditText
-        android:id="@+id/et_name"
+        android:id="@+id/et_email"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_above="@id/et_password"
+        android:hint="@string/e_mail"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:background="@drawable/et_custom"
-        android:hint="@string/username"
-        android:inputType="textEmailAddress"
         android:padding="15dp"
+        android:inputType="textEmailAddress"
+        android:layout_above="@id/et_password"
+        android:background="@drawable/et_custom"
         android:textSize="15sp" />
 
     <EditText
@@ -82,17 +83,5 @@
         android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="20dp"/>
-
-    <TextView
-        android:id="@+id/et_error"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="39dp"
-        android:layout_marginLeft="39dp"
-        android:layout_marginBottom="236dp"
-        android:text="TextView" />
 
 </RelativeLayout>
